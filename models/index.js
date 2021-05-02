@@ -4,7 +4,8 @@ const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
-// Products belongsTo Category
+// Products belongs To Category
+//look through activities
 
 // Categories have many Products
 
@@ -18,3 +19,4 @@ module.exports = {
   Tag,
   ProductTag,
 };
+

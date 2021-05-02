@@ -3,9 +3,11 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
+//
 router.get('/', (req, res) => {
+  console.log("get route testing");
   Category.findAll({ // find all categories
-    include: [Product], // be sure to include its associated Products
+    //include: [Product], // be sure to include its associated Products
   })
   .then((categories) => res.json(categories))
   .catch((err) => res.status(500).json(err));
